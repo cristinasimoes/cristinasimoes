@@ -6,8 +6,6 @@ I'm Cristina from Portugal and I am currently living in Germany, working as a fr
 
 ## Skills and Experience
 
-* ⚛ React
-* 📱 React Native
 * 💻 HTML, CSS, JS
 
 ## Examples of Work
