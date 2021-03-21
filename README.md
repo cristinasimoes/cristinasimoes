@@ -1,4 +1,4 @@
-![Web Developer | Web Designer](https://media-exp1.licdn.com/dms/image/C5616AQG5rYVw_LAU9Q/profile-displaybackgroundimage-shrink_350_1400/0/1613919631748?e=1619654400&v=beta&t=ADG-ApKipT7_-Gr533iwt6MC4lgJ5--kqIQCvRHavzw)
+![Web Developer | Web Designer](https://media-exp1.licdn.com/dms/image/C5616AQHVNNgMc96FYQ/profile-displaybackgroundimage-shrink_350_1400/0/1616010173057?e=1622073600&v=beta&t=wBs7umhoZDC3R6txWsnUyg5qAvdBtNua8I9-W_x88gw)
 
 # Cristina Simões
 
