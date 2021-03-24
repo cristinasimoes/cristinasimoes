@@ -39,21 +39,23 @@ html, body {
 
 figure{
   margin: 0;
+  z-index: 0;
 }
 a, p{
   position: relative;
 
   color: var(--blue);
   text-decoration: none;
-  font-size: 11px;
-  font-family: moonglade;
-  letter-spacing: 6px;
+  font-size: 13px;
+  font-family: knockout;
+  letter-spacing: 3px;
   cursor: default;
-  line-height: 17px;
-  cursor: pointer;
+  line-height: 19px;
+  /* cursor: pointer; */
     z-index: 999;
 
 }
+
 
 ul{
   position: relative;
@@ -186,8 +188,6 @@ li{
   transition:color 3s ease 0s;
 }
 
-
-
 .bg-video-front, .bg-video-back{
   position: absolute;
   right: 0;
@@ -214,7 +214,18 @@ nav{
   height:  100%;  
   width: 100%;
   justify-content: space-between;
-  /* text-transform: uppercase; */
+}
+
+nav a, nav p{
+  font-family: moonglade;
+  font-size: 11px;
+  letter-spacing: 6px;
+  cursor: default;
+  line-height: 17px;
+  cursor: pointer;
+  /* mix-blend-mode: difference;
+  color: rgba(164, 210, 231, 0.603); */
+
 }
 .nav-center{
   position: relative;
@@ -228,6 +239,7 @@ nav{
   position: relative;
   z-index: 5;
   width: 50px;
+  cursor: pointer;
 }
 .nav li{
   z-index: 0;
@@ -352,7 +364,9 @@ nav{
   flex-direction: row;
   align-items: flex-end;
 }
-
+.project-links a{
+  cursor: pointer;
+}
 .project-article header{
   margin-bottom: 20px;
 }
@@ -374,6 +388,10 @@ figure img{
   /* width: 80%; */
   height: auto;
   cursor: pointer;
+/* 
+  position: relative;
+
+  z-index: 1; */
 } 
 
 
@@ -397,6 +415,8 @@ transition:.3s;
 }
 .number-font{
   font-family: 'Exo 2', sans-serif;
+  font-family: knockout;
+
 }
 .bold{
   padding-bottom: 6px;
@@ -451,6 +471,71 @@ transition:.3s;
   display: flex;
   flex-direction: column;
   margin-right: 10px;
+  cursor: pointer;
+}
+.phonetag{
+  font-family: knockout;
+  font-size: 12px;
+  cursor: pointer;
+}
+.emailtag{
+
+  cursor: pointer;
+}
+#clipboard:hover{
+  transition: all 0.3s ease 0s;
+}
+.source:hover{
+  transition: all 0.3s ease 0s;
+}
+.bubble {
+  transition: transform 500ms cubic-bezier(0.17, 0.61, 0.54, 0.9);
+  cursor: pointer;
+}
+.animation {
+  animation: crescendo 0.2s alternate ease-in;
+}
+  
+@keyframes crescendo {
+  0%   {transform: scale(1);}
+  100% {transform: scale(1.05);}
+}
+
+.clipboard2{
+  border: none;
+  border-radius: 45px;
+  transition: all 0.3s ease 0s;
+  outline: none;   
+}
+.copyto{
+  font-size: 10px; 
+  letter-spacing: 1px;
+  /* color: rgb(79, 81, 90); */
+  /* width: 100px; */
+  position: absolute;
+  margin: 21px 23px;
+  cursor: pointer;
+  font-family: moonglade;
+
+  opacity: 0;    
+}
+.copyto2{
+  font-size: 10px; 
+  letter-spacing: 1px;
+  color: rgb(79, 81, 90);
+  position: absolute;
+  margin: 21px 23px;
+  cursor: pointer;
+  opacity: 0;    
+  font-family: moonglade;
+
+}
+.iconCopy, .iconCopy2{
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;    
+  font-size: 10px;
+  margin: 23px 0px 0 6px;
 }
 
 @media screen and (max-width: 1440px) {
@@ -502,8 +587,9 @@ transition:.3s;
   .about-info {
     display: flex;
     flex-direction: row;
-    width: 850px;
+    width: 798px;
   }
+
 }
 @media screen and (max-width: 1024px) {
   .text-section{
@@ -560,14 +646,6 @@ transition:.3s;
     margin-left: 20%;
   }
 
-  /* text section */
-  /* .text-section{
-    height: 90vh;
-  } */
-  /* project section */
-  /* .animated-cursor{
-    display: none;
-  } */
 
   .project-main-title a {
     font-size: 9vw;

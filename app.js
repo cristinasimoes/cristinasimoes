@@ -18,6 +18,13 @@ var bookImg = document.querySelector("#projectBox3 img");
 const scrollArea = document.querySelector('#scrollWrapper');
 mainContainer = document.querySelector(".main-container");
 
+// copy to clipboard variables
+var clipboard = document.getElementById('clipboard');
+var clipboard2 = document.getElementById('clipboard2');
+var iconCopy = document.querySelector('.iconCopy');
+var iconCopy2 = document.querySelector('.iconCopy2');
+var copyto = document.querySelector('.copyto');
+var copyto2 = document.querySelector('.copyto2');
 // match media variables
 var screenS = window.matchMedia("(max-width:425px)");
 // var screenXS = window.matchMedia("(max-width:375px)");
@@ -518,3 +525,158 @@ $('.menu').mousemove(function (e) {
  
   
  });
+
+ // copy to clipboard
+function copyElementText(id) {
+  var text = document.querySelector(id).innerText;
+  console.log(text);
+  var elem = document.createElement("textarea");
+  document.body.appendChild(elem);
+  elem.value = text;
+  elem.select();
+  document.execCommand("copy");
+  document.body.removeChild(elem);
+}
+
+// animation clipboard buttons
+clipboard.addEventListener('mouseenter', function(){
+  iconCopy.style.opacity='1';
+  iconCopy.style.transition ="all 1s ease";
+  copyto.style.opacity='1';
+  copyto.style.transition ="all 1s ease";
+});
+clipboard.addEventListener('mouseleave', function(){
+  iconCopy.style.opacity='0';
+  iconCopy.style.transition ="all 1s ease";
+  copyto.style.opacity='0';
+  copyto.style.transition ="all 1s ease";
+});
+clipboard2.addEventListener('mouseenter', function(){
+  iconCopy2.style.opacity='1';
+  iconCopy2.style.transition ="all 1s ease";
+  copyto2.style.opacity='1';
+  copyto2.style.transition ="all 1s ease";
+});
+clipboard2.addEventListener('mouseleave', function(){
+  iconCopy2.style.opacity='0';
+  iconCopy2.style.transition ="all 1s ease";
+  copyto2.style.opacity='0';
+  copyto2.style.transition ="all 1s ease";
+});
+var bubble = document.getElementById('clipboard');
+
+// animation on lauch code button
+// var bubble = document.getElementById('clipboard');
+// bubble.addEventListener('mouseenter', function(){
+//   bubble.style.transform ="scale(1.05,1.05)";
+// });
+// bubble.addEventListener('mouseleave', function(){
+//   bubble.style.transform ="scale(1,1)";
+// });
+
+bubble.addEventListener('click', function(e){
+  e.preventDefault;
+  // -> removing the class
+  bubble.classList.remove("animation");
+  void bubble.offsetWidth;
+  // -> and re-adding the class
+  bubble.classList.add("animation");
+});
+var bubble2 = document.getElementById('clipboard2');
+
+// var bubble2 = document.getElementById('clipboard2');
+// bubble2.addEventListener('mouseenter', function(){
+//   bubble2.style.transform ="scale(1.05,1.05)";
+// });
+// bubble2.addEventListener('mouseleave', function(){
+//   bubble2.style.transform ="scale(1,1)";
+// });
+
+
+
+bubble2.addEventListener('click', function(e){
+  e.preventDefault;
+  // -> removing the class
+  bubble2.classList.remove("animation");
+  void bubble2.offsetWidth;
+  // -> and re-adding the class
+  bubble2.classList.add("animation");
+});
+
+var bubble3 = document.querySelector('.source');
+bubble3.addEventListener('mouseenter', function(){
+  console.log(456);
+  bubble3.style.transition ="all 0.3s ease 0s";
+  bubble3.style.transform ="scale(1.1,1.1)";
+});
+bubble3.addEventListener('mouseleave', function(){
+  bubble3.style.transform ="scale(1,1)";
+  bubble3.style.transition ="all 0.3s ease 0s";
+});
+
+var bubble4 = document.querySelector('.source2');
+bubble4.addEventListener('mouseenter', function(){
+  console.log(456);
+  bubble4.style.transition ="all 0.3s ease 0s";
+  bubble4.style.transform ="scale(1.1,1.1)";
+});
+bubble4.addEventListener('mouseleave', function(){
+  bubble4.style.transform ="scale(1,1)";
+  bubble4.style.transition ="all 0.3s ease 0s";
+});
+
+var bubble5 = document.querySelector('.source3');
+bubble5.addEventListener('mouseenter', function(){
+  console.log(456);
+  bubble5.style.transition ="all 0.3s ease 0s";
+  bubble5.style.transform ="scale(1.1,1.1)";
+});
+bubble5.addEventListener('mouseleave', function(){
+  bubble5.style.transform ="scale(1,1)";
+  bubble5.style.transition ="all 0.3s ease 0s";
+});
+
+var bubble6 = document.querySelector('.source4');
+bubble6.addEventListener('mouseenter', function(){
+  console.log(456);
+  bubble6.style.transition ="all 0.3s ease 0s";
+  bubble6.style.transform ="scale(1.1,1.1)";
+});
+bubble6.addEventListener('mouseleave', function(){
+  bubble6.style.transform ="scale(1,1)";
+  bubble6.style.transition ="all 0.3s ease 0s";
+});
+
+var bubble7 = document.querySelector('.source5');
+bubble7.addEventListener('mouseenter', function(){
+  console.log(456);
+  bubble7.style.transition ="all 0.3s ease 0s";
+  bubble7.style.transform ="scale(1.1,1.1)";
+})
+bubble7.addEventListener('mouseleave', function(){
+  bubble7.style.transform ="scale(1,1)";
+  bubble7.style.transition ="all 0.3s ease 0s";
+});
+
+var bubble8 = document.querySelector('.source6');
+bubble8.addEventListener('mouseenter', function(){
+  console.log(456);
+  bubble8.style.transition ="all 0.3s ease 0s";
+  bubble8.style.transform ="scale(1.1,1.1)";
+});
+bubble8.addEventListener('mouseleave', function(){
+  bubble8.style.transform ="scale(1,1)";
+  bubble8.style.transition ="all 0.3s ease 0s";
+});
+
+// var bubble9 = document.querySelector('.source7');
+// bubble9.addEventListener('mouseenter', function(){
+//   console.log('jjj');
+//   console.log(456);
+//   bubble9.style.transition ="all 0.3s ease 0s";
+//   bubble9.style.transform ="scale(1.1,1.1)";
+// });
+// bubble9.addEventListener('mouseleave', function(){
+//   bubble9.style.transform ="scale(1,1)";
+//   bubble9.style.transition ="all 0.3s ease 0s";
+// });
