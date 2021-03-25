@@ -727,6 +727,11 @@ transition:.3s;
     margin: 29% 13%;
     width: 290px;
 }
+.home-section article{
+  width: 100vw;
+  margin: -14vw 0 0 0;
+
+}
 }
 @media screen and (max-width: 425px) {
   .project-article header a {
@@ -753,7 +758,7 @@ transition:.3s;
 
   .home-section article{
     width: 100vw;
-    margin: -4vw 0 0 0;
+    margin: -14vw 0 0 0;
 
   }
   .home-section header{
