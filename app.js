@@ -104,7 +104,7 @@ window.onload = function() {
     // var circle1 = document.querySelector('.menu1 img');
     // circle1.classList.remove('circle1');
   }else{
-    console.log(88);
+    // console.log(88);
 
   }
   if(screenMmax.matches){
@@ -403,7 +403,7 @@ function videoback(){
   // color transition
       // when video1 is almost finished
   if(video1.currentTime > 13 ){
-    console.log('maior que 13');
+    // console.log('maior que 13');
     colorToggle( "color-toggle", "color-toggle2", "color-toggle3", "color-toggle4", "color-toggle5", "color-toggle6", "color-toggle7", "color-toggle8");
     var underline = document.querySelector('#aboutNav');
     underline.style.borderColor = "rgb(79, 81, 90)";
@@ -411,7 +411,7 @@ function videoback(){
   }
   else{
     if(video1.currentTime > 11 ){
-      console.log('maior que 11');
+      // console.log('maior que 11');
       colorToggle( "color-toggle5", "color-toggle2", "color-toggle3", "color-toggle4", "color-toggle", "color-toggle6", "color-toggle7", "color-toggle8");
       var underline = document.querySelector('#aboutNav');
       underline.style.borderColor = "rgb(79, 81, 90)";
@@ -419,7 +419,7 @@ function videoback(){
     }
     else{
       if(video1.currentTime > 6 ){
-        console.log('maior que 6');
+        // console.log('maior que 6');
         colorToggle( "color-toggle6", "color-toggle2", "color-toggle3", "color-toggle4", "color-toggle5", "color-toggle", "color-toggle7", "color-toggle8");
         var underline = document.querySelector('#aboutNav');
         underline.style.borderColor = "rgb(79, 81, 90)";
@@ -427,7 +427,7 @@ function videoback(){
       }
       else{
         if(video1.currentTime > 3 ){
-          console.log('maior que 3');
+          // console.log('maior que 3');
           colorToggle( "color-toggle7", "color-toggle2", "color-toggle3", "color-toggle4", "color-toggle5", "color-toggle6", "color-toggle", "color-toggle8");
           var underline = document.querySelector('#aboutNav');
           underline.style.borderColor = "rgb(79, 81, 90)";
@@ -435,14 +435,14 @@ function videoback(){
         }
         else{
           if(video1.currentTime > 2 ){
-            console.log('maior que 2');
+            // console.log('maior que 2');
             colorToggle( "color-toggle8", "color-toggle2", "color-toggle3", "color-toggle4", "color-toggle5", "color-toggle6", "color-toggle7", "color-toggle");
             var underline = document.querySelector('#aboutNav');
             underline.style.borderColor = "rgb(79, 81, 90)";
             underline.style.transition = "border-color 3s ease 6s, color 3s ease 6s";
           }
           else{
-            console.log('menor igual 2');
+            // console.log('menor igual 2');
 
             colorToggle( "color-toggle8", "color-toggle2", "color-toggle3", "color-toggle4", "color-toggle5", "color-toggle6", "color-toggle7", "color-toggle");
           }
@@ -477,7 +477,7 @@ function videostart(){
   scrollNav.innerHTML = "scroll down";
   // color transition
   if(video1.currentTime < 2 ){
-    console.log('video start menor que 2');
+    // console.log('video start menor que 2');
     colorToggle( "color-toggle2", "color-toggle", "color-toggle3", "color-toggle4", "color-toggle5", "color-toggle6", "color-toggle7", "color-toggle8");
     var underline = document.querySelector('#aboutNav');
     underline.style.borderColor =  "rgba(164, 210, 231, 0.603)";
@@ -489,7 +489,7 @@ function videostart(){
       var underline = document.querySelector('#aboutNav');
       underline.style.borderColor =  "rgba(164, 210, 231, 0.603)";
       underline.style.transition = "border-color 2s ease 4s, color 2s ease 2s";
-      console.log('video start menor  8');
+      // console.log('video start menor  8');
 
     }else{
         colorToggle( "color-toggle3", "color-toggle2", "color-toggle", "color-toggle4", "color-toggle5", "color-toggle6", "color-toggle7", "color-toggle8");
@@ -497,7 +497,7 @@ function videostart(){
         mainContainer.classList.remove("color-toggle7");
         underline.style.borderColor =  "rgba(164, 210, 231, 0.603)";
         underline.style.transition = "border-color 2s ease 4s, color 2s ease 2s";
-        console.log('video start maior 8');
+        // console.log('video start maior 8');
     }
   }
 
@@ -539,7 +539,7 @@ if((e.target.scrollTop < 2775) && (video1.style.opacity == 0)){
  // copy to clipboard
 function copyElementText(id) {
   var text = document.querySelector(id).innerText;
-  console.log(text);
+  // console.log(text);
   var elem = document.createElement("textarea");
   document.body.appendChild(elem);
   elem.value = text;
@@ -615,7 +615,7 @@ bubble2.addEventListener('click', function(e){
 
 var bubble3 = document.querySelector('.source');
 bubble3.addEventListener('mouseenter', function(){
-  console.log(456);
+  // console.log(456);
   bubble3.style.transition ="all 0.3s ease 0s";
   bubble3.style.transform ="scale(1.1,1.1)";
 });
@@ -626,7 +626,6 @@ bubble3.addEventListener('mouseleave', function(){
 
 var bubble4 = document.querySelector('.source2');
 bubble4.addEventListener('mouseenter', function(){
-  console.log(456);
   bubble4.style.transition ="all 0.3s ease 0s";
   bubble4.style.transform ="scale(1.1,1.1)";
 });
@@ -637,7 +636,6 @@ bubble4.addEventListener('mouseleave', function(){
 
 var bubble5 = document.querySelector('.source3');
 bubble5.addEventListener('mouseenter', function(){
-  console.log(456);
   bubble5.style.transition ="all 0.3s ease 0s";
   bubble5.style.transform ="scale(1.1,1.1)";
 });
@@ -648,7 +646,6 @@ bubble5.addEventListener('mouseleave', function(){
 
 var bubble6 = document.querySelector('.source4');
 bubble6.addEventListener('mouseenter', function(){
-  console.log(456);
   bubble6.style.transition ="all 0.3s ease 0s";
   bubble6.style.transform ="scale(1.1,1.1)";
 });
@@ -659,7 +656,6 @@ bubble6.addEventListener('mouseleave', function(){
 
 var bubble7 = document.querySelector('.source5');
 bubble7.addEventListener('mouseenter', function(){
-  console.log(456);
   bubble7.style.transition ="all 0.3s ease 0s";
   bubble7.style.transform ="scale(1.1,1.1)";
 })
@@ -670,7 +666,6 @@ bubble7.addEventListener('mouseleave', function(){
 
 var bubble8 = document.querySelector('.source6');
 bubble8.addEventListener('mouseenter', function(){
-  console.log(456);
   bubble8.style.transition ="all 0.3s ease 0s";
   bubble8.style.transform ="scale(1.1,1.1)";
 });
