@@ -13,6 +13,7 @@
   unicode-range: U+000-5FF;
   font-weight: 400; 
   font-style: normal;  
+  
 }
 
 :root {
@@ -216,7 +217,7 @@ nav{
   justify-content: space-between;
 }
 
-nav a, nav p{
+/* nav a, nav p{
   font-family: moonglade;
   font-size: 11px;
   letter-spacing: 6px;
@@ -226,7 +227,7 @@ nav a, nav p{
   mix-blend-mode: difference;
   color: rgba(164, 210, 231, 0.603);
 
-}
+} */
 .nav-center{
   position: relative;
   display: flex;
@@ -729,7 +730,9 @@ transition:.3s;
 }
 .home-section article{
   width: 100vw;
-  margin: -14vw 0 0 0;
+  /* margin: -14vw 0 0 0; */
+  margin: 0vw 0px 0 10vw;
+
 
 }
 }
