@@ -4,9 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .bg-video-front, .bg-video-back{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  object-fit: cover;
+  opacity: 1;
+}
+    </style>
     <title>test</title>
 </head>
 <body>
-    <h1>test</h1>
+    <video class="bg-video-back" id="bgVideoBack" poster="media/video-poster-back.jpg" preload="metadata" muted="true" playsinline autoplay>
+        <source src="media/bg-video-back.webm" type="video/webm">
+        <!-- <source src="media/bg-video-back.mp4" type="video/mp4"> -->
+        Your browser does not support the video tag.
+      </video>
+      <video class="bg-video-front" id="bgVideoFront" poster="media/video-poster-front.jpg" preload="metadata" muted="true" playsinline autoplay>
+        <source src="media/bg-video-front.webm" type="video/webm">
+        <!-- <source src="media/bg-video-front.mp4" type="video/mp4"> -->
+        Your browser does not support the video tag.
+      </video>
 </body>
 </html>
