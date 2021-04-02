@@ -362,8 +362,8 @@ aboutNav.onclick = function(){
 
 // video starting point
 video1.style.opacity = "1";
-video1.playbackRate = 2;
-video2.playbackRate = 2;
+// video1.playbackRate = 2;
+// video2.playbackRate = 2;
 
 
 
