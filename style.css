@@ -864,7 +864,7 @@ transition:.3s;
     } */
 
 /* iphone 3 */
-@media only screen and (min-device-width: 320px) and (max-device-height: 480px) and (-webkit-device-pixel-ratio: 1) { 
+/* @media only screen and (min-device-width: 320px) and (max-device-height: 480px) and (-webkit-device-pixel-ratio: 1) { 
         .bg-video-front, .bg-video-back{
       display: none;
       }
@@ -873,10 +873,10 @@ transition:.3s;
  
         background-color: var(--background2);
       }
-}
+} */
 
 /* iphone 4 */
-@media only screen and (min-device-width: 320px) and (max-device-height: 480px) and (-webkit-device-pixel-ratio: 2) { 
+/* @media only screen and (min-device-width: 320px) and (max-device-height: 480px) and (-webkit-device-pixel-ratio: 2) { 
         .bg-video-front, .bg-video-back{
       display: none;
       }
@@ -885,10 +885,10 @@ transition:.3s;
  
         background-color: var(--background2);
       }
-}
+} */
 
 /* iphone 5 */
-@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (-webkit-device-pixel-ratio: 2) { 
+/* @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (-webkit-device-pixel-ratio: 2) { 
         .bg-video-front, .bg-video-back{
       display: none;
       }
@@ -897,10 +897,10 @@ transition:.3s;
  
         background-color: var(--background2);
       }
-}
+} */
 
 /* iphone 6, 6s, 7, 8 */
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) { 
+/* @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) { 
         .bg-video-front, .bg-video-back{
       display: none;
       }
@@ -909,10 +909,10 @@ transition:.3s;
  
         background-color: var(--background2);
       }
-}
+} */
   
 /* iphone 6+, 6s+, 7+, 8+ */
-@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) { 
+/* @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) { 
         .bg-video-front, .bg-video-back{
       display: none;
       }
@@ -921,4 +921,4 @@ transition:.3s;
  
         background-color: var(--background2);
       }
-}
+} */
