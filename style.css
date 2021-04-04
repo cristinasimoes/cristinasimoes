@@ -20,6 +20,8 @@
   --gray: rgb(79, 81, 90);
   --blue: rgba(164, 210, 231, 0.603);
   --background: #b8bcdd;
+  --background2:rgb(8 6 13);
+
 }
 html, body {
   overflow: hidden;
@@ -244,6 +246,14 @@ nav{
 }
 .nav li{
   z-index: 0;
+}
+nav a{
+  cursor: pointer;
+
+}
+#scrollNav{
+  cursor: default ;
+
 }
 
 .underline{
@@ -834,3 +844,28 @@ transition:.3s;
     letter-spacing: 2px;
   }
 }
+
+/* when iphone 11 */
+@media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) 
+    and (-webkit-device-pixel-ratio: 2) { 
+
+      .bg-video-front, .bg-video-back{
+      display: none;
+      }
+
+      html, body {
+ 
+        background-color: var(--background2);
+      }
+/* 
+      a, p{
+      
+        color: var(--gray);
+
+      
+      } */
+      
+
+    }

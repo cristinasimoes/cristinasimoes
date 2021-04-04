@@ -389,6 +389,7 @@ function colorToggle(add, remove1, remove2, remove3, remove4, remove5, remove6, 
   mainContainer.classList.remove(`${remove6}`);
   mainContainer.classList.remove(`${remove7}`);
 }
+
 function videoback(){
   // video transition
   if(video2.currentTime >12){
@@ -399,10 +400,11 @@ function videoback(){
   }
   // change scroll down to scroll up
   scrollNav.innerHTML = "scroll up";
+  
   mainContainer = document.querySelector(".main-container");
   // color transition
       // when video1 is almost finished
-  if(video1.currentTime > 13 ){
+  if((video1.currentTime > 13) ){
     // console.log('maior que 13');
     colorToggle( "color-toggle", "color-toggle2", "color-toggle3", "color-toggle4", "color-toggle5", "color-toggle6", "color-toggle7", "color-toggle8");
     var underline = document.querySelector('#aboutNav');
@@ -410,7 +412,7 @@ function videoback(){
     underline.style.transition = "border-color 3s ease 6s, color 3s ease 4s";
   }
   else{
-    if(video1.currentTime > 11 ){
+    if((video1.currentTime > 11) ){
       // console.log('maior que 11');
       colorToggle( "color-toggle5", "color-toggle2", "color-toggle3", "color-toggle4", "color-toggle", "color-toggle6", "color-toggle7", "color-toggle8");
       var underline = document.querySelector('#aboutNav');
@@ -418,7 +420,7 @@ function videoback(){
       underline.style.transition = "border-color 3s ease 6s, color 3s ease 3s";
     }
     else{
-      if(video1.currentTime > 6 ){
+      if((video1.currentTime > 6 ) && (video1.style.opacity != "0") && (video2.style.opacity != "0")){
         // console.log('maior que 6');
         colorToggle( "color-toggle6", "color-toggle2", "color-toggle3", "color-toggle4", "color-toggle5", "color-toggle", "color-toggle7", "color-toggle8");
         var underline = document.querySelector('#aboutNav');
@@ -426,7 +428,7 @@ function videoback(){
         underline.style.transition = "border-color 3s ease 6s, color 3s ease 2s";
       }
       else{
-        if(video1.currentTime > 3 ){
+        if((video1.currentTime > 3) ){
           // console.log('maior que 3');
           colorToggle( "color-toggle7", "color-toggle2", "color-toggle3", "color-toggle4", "color-toggle5", "color-toggle6", "color-toggle", "color-toggle8");
           var underline = document.querySelector('#aboutNav');
@@ -434,8 +436,10 @@ function videoback(){
           underline.style.transition = "border-color 3s ease 6s, color 3s ease 1s";
         }
         else{
-          if(video1.currentTime > 2 ){
+          if((video1.currentTime > 2 ) && (video1.style.opacity != "0") && (video2.style.opacity != "0")){
             // console.log('maior que 2');
+            console.log(video1.style.display);
+
             colorToggle( "color-toggle8", "color-toggle2", "color-toggle3", "color-toggle4", "color-toggle5", "color-toggle6", "color-toggle7", "color-toggle");
             var underline = document.querySelector('#aboutNav');
             underline.style.borderColor = "rgb(79, 81, 90)";
@@ -443,8 +447,10 @@ function videoback(){
           }
           else{
             // console.log('menor igual 2');
+            if((video1.style.opacity != "0") && (video2.style.opacity != "0")){
+              colorToggle( "color-toggle8", "color-toggle2", "color-toggle3", "color-toggle4", "color-toggle5", "color-toggle6", "color-toggle7", "color-toggle");
 
-            colorToggle( "color-toggle8", "color-toggle2", "color-toggle3", "color-toggle4", "color-toggle5", "color-toggle6", "color-toggle7", "color-toggle");
+            }
           }
           var underline = document.querySelector('#aboutNav');
           underline.style.borderColor = "rgb(79, 81, 90)";
@@ -476,7 +482,7 @@ function videostart(){
   // change scroll up to scroll down
   scrollNav.innerHTML = "scroll down";
   // color transition
-  if(video1.currentTime < 2 ){
+  if((video1.currentTime < 2)){
     // console.log('video start menor que 2');
     colorToggle( "color-toggle2", "color-toggle", "color-toggle3", "color-toggle4", "color-toggle5", "color-toggle6", "color-toggle7", "color-toggle8");
     var underline = document.querySelector('#aboutNav');
@@ -484,7 +490,7 @@ function videostart(){
     underline.style.transition = "border-color 2s ease 4s, color 2s ease 4s";
   }
   else{
-    if(video1.currentTime < 8 ){
+    if((video1.currentTime < 8)){
       colorToggle( "color-toggle4", "color-toggle2", "color-toggle3", "color-toggle", "color-toggle5", "color-toggle6", "color-toggle7", "color-toggle8");
       var underline = document.querySelector('#aboutNav');
       underline.style.borderColor =  "rgba(164, 210, 231, 0.603)";
@@ -492,12 +498,15 @@ function videostart(){
       // console.log('video start menor  8');
 
     }else{
+      if(video1.style.display != "none"){
         colorToggle( "color-toggle3", "color-toggle2", "color-toggle", "color-toggle4", "color-toggle5", "color-toggle6", "color-toggle7", "color-toggle8");
         var underline = document.querySelector('#aboutNav');
         mainContainer.classList.remove("color-toggle7");
         underline.style.borderColor =  "rgba(164, 210, 231, 0.603)";
         underline.style.transition = "border-color 2s ease 4s, color 2s ease 2s";
         // console.log('video start maior 8');
+      }
+        
     }
   }
 
