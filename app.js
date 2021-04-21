@@ -33,7 +33,12 @@ var screenSmin = window.matchMedia("(min-width:425px)");
 
 var screenMmax = window.matchMedia("(max-width:768px)");
 
-
+window.onload = function() {
+    if(!window.location.hash) {
+        window.location = window.location + '#loaded';
+        window.location.reload();
+    }
+}
 
 // function tween(circle,scaleN, xValue,yValue){
 //   TweenMax.to($(circle), .3, {
